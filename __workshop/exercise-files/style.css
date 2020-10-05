@@ -1,1 +1,109 @@
-/* add css here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Jost";
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  margin: auto;
+  margin-top: 32px;
+  padding: 24px;
+  max-width: 475px;
+}
+
+form {
+  width: 100%;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.input-section {
+  height: 40px;
+  text-align: right;
+}
+
+.input-section input {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 30px;
+  margin-left: 10px;
+  width: 60%;
+}
+
+input:required:focus {
+  border: 4px solid hsl(256deg, 100%, 44%);
+  outline: none;
+}
+
+#terms {
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  margin: 5px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+
+#terms-of-use {
+  margin: 5px;
+}
+
+#error-section {
+  align-items: center;
+  background: hsla(333deg, 100%, 44%, 0.25);
+  border-radius: 5px;
+  display: none;
+  height: 75px;
+  justify-content: center;
+  margin: 5px;
+  margin-bottom: 25px;
+}
+
+#error-message {
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  width: 135px;
+}
+
+#clear {
+  background-color: hsl(333deg, 100%, 44%);
+}
+
+#submit {
+  background-color: hsl(256deg, 100%, 44%);
+}

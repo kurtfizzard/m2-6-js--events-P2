@@ -86,7 +86,18 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
+  // create a new array, filter will return a new array based on certain conditions
+  let newArray = arr.filter((obj) => {
+    // if the provided key is one of those existing in skillLevels
+    if (key === "javascript" || key === "python" || key === "sql") {
+      // return all objects that have skill levels at least that high
+      return obj.skillLevels[key] > val;
+    }
+    // otherwise return the objects that contain the same key/value pair
+    return obj[key] === val;
+  });
+  // return the new array
+  return newArray;
 };
 
 // 2. Do a console.log to verify your function.

@@ -18,7 +18,17 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-  // return something
+  // create a new array, map will generate a new array based on certain conditions
+  let namesArray = peopleArr.map((person) =>
+    // if middle name is a string
+    typeof person.name.middle === "string"
+      ? // add first, middle and last name together
+        `${person.name.first} ${person.name.middle} ${person.name.last}`
+      : // otherwise add first and last
+        `${person.name.first} ${person.name.last}`
+  );
+  // return the new array
+  return namesArray;
 }
 
 // 2. Do a console.log to verify your function.

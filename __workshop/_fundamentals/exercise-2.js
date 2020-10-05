@@ -20,7 +20,21 @@ const people = [
 // Use Math.round()
 
 function avgAge(peopleArr) {
-  // return something
+  // create a variable for the age total
+  let total = 0;
+  // create a variable for the number of people
+  let humans = 0;
+  // loop over the array and carry out a function on each element
+  peopleArr.forEach((person) => {
+    // add each person's age to the total
+    total += person["age"];
+    // count that person towards humans
+    humans += 1;
+  });
+  // let the average equal total divided by humans rounded to the nearest integer
+  let average = Math.round(total / humans);
+  // return the average
+  return average;
 }
 
 // 2. Do a console.log to verify your function.
